@@ -1,48 +1,48 @@
-# Food Delivery Data Integration and Analysis
+# Food Delivery Data Integration & Analysis
 
-## Project Overview
-This project focuses on integrating and analyzing food delivery data from multiple sources to create a single, unified dataset for business analysis.
+## Overview
+This project demonstrates a structured approach to integrating and analyzing food delivery data from multiple heterogeneous data sources. The objective is to consolidate transactional, user, and restaurant datasets into a unified, analytics-ready dataset that can be used to derive meaningful business insights.
 
-The objective is to combine transactional order data, user information, and restaurant details into one clean dataset that can be used to answer key business questions related to revenue, customer behavior, cuisine trends, and time-based performance.
+The project emphasizes real-world data engineering practices such as data ingestion, validation, transformation, and integration.
 
 ---
 
-## Datasets Used
-The project uses three different data sources:
+## Data Sources
+The following datasets are used in this project:
 
-1. **orders.csv**
-   - Contains transactional order-level data such as order ID, user ID, restaurant ID, order date, and order amount.
+- **orders.csv**  
+  Contains transactional order-level data including order identifiers, user identifiers, restaurant identifiers, order dates, and order amounts.
 
-2. **users.json**
-   - Contains user-related information including membership type and other customer details.
+- **users.json**  
+  Contains user master data such as membership type and other customer-related attributes.
 
-3. **restaurants.sql**
-   - Contains restaurant master data such as restaurant ID, name, city, cuisine type, and ratings.
+- **restaurants.sql**  
+  Contains restaurant master data including restaurant identifiers, cuisine type, city, and ratings.
 
 ---
 
 ## Tools & Technologies
 - **Python**
-- **Pandas** for data manipulation
-- **SQLite (sqlite3)** for processing SQL data
-- **Google Colab / Jupyter Notebook**
-- **GitHub** for version control and submission
+- **Pandas** – Data manipulation and analysis
+- **SQLite (sqlite3)** – SQL data processing
+- **Jupyter Notebook / Google Colab**
+- **GitHub** – Version control and project submission
 
 ---
 
-## Project Workflow
-1. Load data from CSV, JSON, and SQL formats.
-2. Validate primary and foreign key relationships.
-3. Merge datasets using left joins to preserve all transactional records.
-4. Perform data analysis to answer business-related questions.
-5. Export the final merged dataset as a CSV file.
+## Methodology
+1. Ingested data from CSV, JSON, and SQL formats.
+2. Performed structural validation of primary and foreign key relationships.
+3. Integrated datasets using left joins to preserve all transactional records.
+4. Prepared a consolidated dataset suitable for analysis and reporting.
+5. Exported the final merged dataset for reuse and further analytics.
 
 ---
 
 ## Output
 - **final_food_delivery_dataset.csv**  
-  A clean, merged dataset combining orders, users, and restaurants data.  
-  This dataset serves as a single source of truth for analysis and reporting.
+  A clean, unified dataset combining orders, users, and restaurants data.  
+  This dataset serves as a single source of truth for business analysis.
 
 ---
 
